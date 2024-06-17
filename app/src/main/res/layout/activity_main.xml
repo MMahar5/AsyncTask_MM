@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GM2_grey_800"
+    android:backgroundTint="@color/GM2_grey_800"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_marginRight="9dip"
+        android:text="Sleep Time In Seconds:"
+        android:textColor="@color/conversation_important_highlight"
+        android:textSize="11pt" />
+
+    <EditText
+        android:id="@+id/in_time"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_time"
+        android:layout_toRightOf="@id/tv_time"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/dim_foreground_light_inverse"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_run"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/safe_mode_text"
+        android:textSize="9pt" />
+
+    <Button
+        android:id="@+id/btn_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="@color/dim_foreground_dark"
+        android:fontFamily="sans-serif-medium"
+        android:text="Run Async Task"
+        android:textColor="#CF9D4B"
+        android:textSize="20dp" />
+</RelativeLayout>
